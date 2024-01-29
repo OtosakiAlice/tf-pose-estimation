@@ -1,2 +1,20 @@
-Hey! This is a clone of the tf-pose-estimation by Ildoo Kim modified to work with Tensorflow 2.0+!
-Link to original repo: https://www.github.com/ildoonet/tf-openpose
+Tensorflow 2.0でOpenPoseを使用するライブラリ群
+
+## How to use it.
+本コードはtf-pose-estimationが導入されていること前提としています．
+
+## 追加コード
+- many_video.py
+特定フォルダの動画ファイルをすべて読み込み、姿勢推定結果を動画とJSONで出力
+- video_output.py
+動画ファイルをすべて読み込み、姿勢推定結果を動画で出力
+- multi_gpu.py
+マルチGPUテスト用コード（動かない）
+- test1.py
+指定されたフォルダ内のJSONファイルを処理し、各人物の平均移動距離を計算して表示します
+- test2.py
+2つのディレクトリ内のJSONファイルを読み込み、各フレームのキーポイントデータを使用して平均距離を計算します
+- test3.py
+2つのディレクトリ内のJSONファイルを読み込み、各フォルダ内のすべてのファイルの組み合わせに対して平均距離を計算します
+- test4.py
+指定した動画ファイルを読み込み、各フレームをグレースケールに変換し、さらに二値化処理を行って、二値化されたフレームを指定したフォルダに保存するものです
